@@ -1,15 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<title>Formulario</title>
+    <title>Formulario</title>
 </head>
-<form action="" >
+<form action="">
+
     <p>
-    <label for="username">Username:</label>
-    <input type="text" name="username" id="username" title='Introduce
-    your name' autocomplete="name"/>
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" title='Introduce your name' 
+        required="required"
+        placeholder="name"
+        autocomplete="username" />
     </p>
+
+    <p>
+        <label for="lastname">Lastname:</label>
+        <input type="text" name="lastname" id="lastname" title='Introduce your last name' 
+        placeholder="lastname"
+        autocomplete="family-name" />
+    </p> 
+
+    <p>
+        <label for="birthday">Birthday:</label>
+        <input type="date" name="birthday" id="birthday" title='Introduce your birthday' 
+        autocomplete="bday" />
+    </p>
+
+    <p>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" title='Introduce your email' 
+        required="required"
+        placeholder="username@mail.com"
+        autocomplete="email" />
+    </p>
+
+    <p>
+        <label for="cellnumber">Cell Number:</label>
+        <input type="number" name="cellnumber" id="cellnumber" title='Introduce your cell number' 
+        placeholder="123 456 7890"
+        autocomplete="tel" />
+    </p>
+
+    <p>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" title='Introduce  your password' 
+        required="required"
+        placeholder="ej: password1" 
+        autocomplete="current-password" />
+    </p>
+
+    <p>
+        <label for="favoritecolor">Favorite Color:</label>
+        <input type="color" name="favoritecolor" id="favoritecolor" title='Introduce your favorite color'
+        autocomplete="color" />
+    </p>
+
     <input type="submit" value="Submit" />
-    </form>
-    
+</form>
+
 </html>
